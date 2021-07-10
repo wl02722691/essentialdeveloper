@@ -14,6 +14,8 @@
 		69312D912699C17700619AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69312D902699C17700619AB9 /* Assets.xcassets */; };
 		69312D942699C17700619AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69312D922699C17700619AB9 /* LaunchScreen.storyboard */; };
 		69312D9D2699C1BE00619AB9 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69312D9C2699C1BE00619AB9 /* ApiClient.swift */; };
+		6939FBBA2699F81100E98F66 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBB92699F81100E98F66 /* FeedLoader.swift */; };
+		6939FBBE2699F82D00E98F66 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBBD2699F82D00E98F66 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		69312D932699C17700619AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69312D952699C17700619AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69312D9C2699C1BE00619AB9 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		6939FBB92699F81100E98F66 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		6939FBBD2699F82D00E98F66 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		69312D862699C17500619AB9 /* essentialdeveloper */ = {
 			isa = PBXGroup;
 			children = (
+				6939FBB82699F7E200E98F66 /* Feed Feature */,
 				69312D872699C17500619AB9 /* AppDelegate.swift */,
 				69312D892699C17500619AB9 /* SceneDelegate.swift */,
 				69312D8B2699C17500619AB9 /* ViewController.swift */,
@@ -68,6 +73,15 @@
 				69312D9C2699C1BE00619AB9 /* ApiClient.swift */,
 			);
 			path = essentialdeveloper;
+			sourceTree = "<group>";
+		};
+		6939FBB82699F7E200E98F66 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				6939FBB92699F81100E98F66 /* FeedLoader.swift */,
+				6939FBBD2699F82D00E98F66 /* FeedItem.swift */,
+			);
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +156,9 @@
 			files = (
 				69312D8C2699C17500619AB9 /* ViewController.swift in Sources */,
 				69312D882699C17500619AB9 /* AppDelegate.swift in Sources */,
+				6939FBBE2699F82D00E98F66 /* FeedItem.swift in Sources */,
 				69312D8A2699C17500619AB9 /* SceneDelegate.swift in Sources */,
+				6939FBBA2699F81100E98F66 /* FeedLoader.swift in Sources */,
 				69312D9D2699C1BE00619AB9 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Alice.essentialdeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -318,7 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Alice.essentialdeveloper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
