@@ -46,11 +46,12 @@ class essentialTests: XCTestCase {
     func test_load_deliversErrorOnNon200HTTPResponse() {
         let (sut, client) = makeSUT()
         
-        let sample = [199,200,300,400,500]
+        let sample = [199, 300, 400, 500]
         
         sample.enumerated().forEach { (index, code) in
             expect(sut, toCompleteWith: .failure(.invalidData)) {
-                client.complete(withStatusCode: code, at: index)
+                let json = makeItemsJSON([])
+                client.complete(withStatusCode: code, data: json, at: index)
 
             }
         }
@@ -143,7 +144,7 @@ class essentialTests: XCTestCase {
             messages[index].completions(.failure(error))
         }
         
-        func complete(withStatusCode code: Int, data: Data = Data(), at index: Int = 0) {
+        func complete(withStatusCode code: Int, data: Data, at index: Int = 0) {
             let response = HTTPURLResponse(url: requestedURLs[index],
                                            statusCode: code,
                                            httpVersion: nil,
