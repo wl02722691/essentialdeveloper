@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0456A0282707561C003DC71E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A0272707561C003DC71E /* FeedLoader.swift */; };
 		6939FBDF2699FC0800E98F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBDE2699FC0800E98F66 /* AppDelegate.swift */; };
 		6939FBE12699FC0800E98F66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBE02699FC0800E98F66 /* SceneDelegate.swift */; };
 		6939FBE32699FC0800E98F66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBE22699FC0800E98F66 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		6939FBEB2699FC0800E98F66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6939FBE92699FC0800E98F66 /* LaunchScreen.storyboard */; };
 		6939FBF62699FC0800E98F66 /* essentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBF52699FC0800E98F66 /* essentialTests.swift */; };
 		6939FC012699FC0800E98F66 /* essentialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FC002699FC0800E98F66 /* essentialUITests.swift */; };
-		6939FC152699FC2B00E98F66 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FC132699FC2B00E98F66 /* FeedLoader.swift */; };
 		6939FC162699FC2B00E98F66 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FC142699FC2B00E98F66 /* FeedItem.swift */; };
 		6939FC1C269B7A4A00E98F66 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FC1B269B7A4A00E98F66 /* RemoteFeedLoader.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0456A0272707561C003DC71E /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		6939FBDB2699FC0800E98F66 /* essential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = essential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6939FBDE2699FC0800E98F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6939FBE02699FC0800E98F66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		6939FBFC2699FC0800E98F66 /* essentialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = essentialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6939FC002699FC0800E98F66 /* essentialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = essentialUITests.swift; sourceTree = "<group>"; };
 		6939FC022699FC0800E98F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6939FC132699FC2B00E98F66 /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		6939FC142699FC2B00E98F66 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		6939FC1B269B7A4A00E98F66 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,7 +139,7 @@
 		6939FC122699FC2B00E98F66 /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				6939FC132699FC2B00E98F66 /* FeedLoader.swift */,
+				0456A0272707561C003DC71E /* FeedLoader.swift */,
 				6939FC142699FC2B00E98F66 /* FeedItem.swift */,
 			);
 			name = "Feed Feature";
@@ -284,9 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0456A0282707561C003DC71E /* FeedLoader.swift in Sources */,
 				6939FBE32699FC0800E98F66 /* ViewController.swift in Sources */,
 				6939FBDF2699FC0800E98F66 /* AppDelegate.swift in Sources */,
-				6939FC152699FC2B00E98F66 /* FeedLoader.swift in Sources */,
 				6939FC162699FC2B00E98F66 /* FeedItem.swift in Sources */,
 				6939FC1C269B7A4A00E98F66 /* RemoteFeedLoader.swift in Sources */,
 				6939FBE12699FC0800E98F66 /* SceneDelegate.swift in Sources */,
