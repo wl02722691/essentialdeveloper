@@ -95,7 +95,17 @@ class essentialTests: XCTestCase {
     private func makeSUT(url: URL = URL(string: "https://a-url.com")!) -> (sut: RemoteFeedLoader, client: HTTPClintSpy) {
         let client = HTTPClintSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
+        
+        trackForMemoryLeak(instance: client)
+        trackForMemoryLeak(instance: sut)
+        
         return (sut, client)
+    }
+    
+    private func trackForMemoryLeak(instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
+        addTeardownBlock { [weak instance] in
+            XCTAssertNil(instance, "it is not nil")
+        }
     }
     
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedItem, json: [String: Any]) {
