@@ -150,6 +150,7 @@ class essentialTests: XCTestCase {
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWith expectedResult: RemoteFeedLoader.Result , when action: () -> Void, file: StaticString = #filePath, line: UInt = #line ) {
         
+        // 用 expectation 處理 asynchronous behavior
         let exp = expectation(description: "Wait for load completion")
         
         sut.load { receivedResult in

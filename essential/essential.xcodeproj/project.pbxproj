@@ -10,6 +10,7 @@
 		0456A0282707561C003DC71E /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A0272707561C003DC71E /* FeedLoader.swift */; };
 		0456A02A27076071003DC71E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A02927076071003DC71E /* HTTPClient.swift */; };
 		0456A02C27076155003DC71E /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A02B27076155003DC71E /* FeedItemsMapper.swift */; };
+		0456A02F270DFF66003DC71E /* URLSessionHTTPClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0456A02E270DFF66003DC71E /* URLSessionHTTPClientTest.swift */; };
 		6939FBDF2699FC0800E98F66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBDE2699FC0800E98F66 /* AppDelegate.swift */; };
 		6939FBE12699FC0800E98F66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBE02699FC0800E98F66 /* SceneDelegate.swift */; };
 		6939FBE32699FC0800E98F66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939FBE22699FC0800E98F66 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		0456A0272707561C003DC71E /* FeedLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		0456A02927076071003DC71E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		0456A02B27076155003DC71E /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		0456A02E270DFF66003DC71E /* URLSessionHTTPClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTest.swift; sourceTree = "<group>"; };
 		6939FBDB2699FC0800E98F66 /* essential.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = essential.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6939FBDE2699FC0800E98F66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6939FBE02699FC0800E98F66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6939FBF52699FC0800E98F66 /* essentialTests.swift */,
+				0456A02E270DFF66003DC71E /* URLSessionHTTPClientTest.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6939FBF62699FC0800E98F66 /* essentialTests.swift in Sources */,
+				0456A02F270DFF66003DC71E /* URLSessionHTTPClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
