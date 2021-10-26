@@ -28,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		046EB70627287D1A003BE578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6939FBD32699FC0700E98F66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6939FBDA2699FC0800E98F66;
+			remoteInfo = essential;
+		};
 		6939FBF22699FC0800E98F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6939FBD32699FC0700E98F66 /* Project object */;
@@ -221,6 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				046EB70727287D1A003BE578 /* PBXTargetDependency */,
 			);
 			name = EssentialFeedAPIEndToEndTests;
 			productName = EssentialFeedAPIEndToEndTests;
@@ -291,6 +299,7 @@
 				TargetAttributes = {
 					046EB6FC2728743E003BE578 = {
 						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6939FBDA2699FC0800E98F66;
 					};
 					6939FBDA2699FC0800E98F66 = {
 						CreatedOnToolsVersion = 12.3;
@@ -407,6 +416,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		046EB70727287D1A003BE578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6939FBDA2699FC0800E98F66 /* essential */;
+			targetProxy = 046EB70627287D1A003BE578 /* PBXContainerItemProxy */;
+		};
 		6939FBF32699FC0800E98F66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6939FBDA2699FC0800E98F66 /* essential */;
@@ -455,6 +469,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/essential.app/essential";
 			};
 			name = Debug;
 		};
@@ -474,6 +489,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/essential.app/essential";
 			};
 			name = Release;
 		};
