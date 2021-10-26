@@ -32,9 +32,9 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6939FBDA2699FC0800E98F66"
-            BuildableName = "essential.app"
-            BlueprintName = "essential"
+            BlueprintIdentifier = "6939FBF02699FC0800E98F66"
+            BuildableName = "essentialTests.xctest"
+            BlueprintName = "essentialTests"
             ReferencedContainer = "container:essential.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
